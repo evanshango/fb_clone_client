@@ -4,8 +4,13 @@ import SignupInput from "../inputs/signup"
 import * as Yup from "yup"
 import DobSelect from "./DobSelect"
 import GenderSelect from "./GenderSelect"
+import {useAppDispatch, useAppSelector} from "../../../store/store"
+import {resetState, signupUser} from "../../../pages/account/accountSlice"
+import {DotLoader} from "react-spinners"
 
-const SignupForm = () => {
+const SignupForm = ({setVisible}) => {
+    const dispatch = useAppDispatch()
+    const {message, status} = useAppSelector(state => state.account)
     const signupInfo = {
         firstName: '',
         lastName: '',
@@ -45,7 +50,8 @@ const SignupForm = () => {
             .max(36, "Password can't be more than 36 characters long"),
     })
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        dispatch(resetState())
         let currDate = new Date()
         let pickedDate = new Date(bYear, bMonth - 1, bDay)
         let atLeast14 = new Date(1970 + 14, 0, 1)
@@ -58,6 +64,11 @@ const SignupForm = () => {
         } else {
             setGenderError('')
             setDateError('')
+            try {
+                await dispatch(signupUser(signup))
+            } catch (e) {
+                console.log("ERROR")
+            }
         }
     }
 
@@ -65,14 +76,14 @@ const SignupForm = () => {
         <div className="blur">
             <div className="signup">
                 <div className="signup_header">
-                    <i className="exit_icon"/>
+                    <i className="exit_icon" onClick={() => setVisible(false)}/>
                     <span>Sign Up</span>
                     <span>It's quick and easy</span>
                 </div>
                 <Formik enableReinitialize
                         initialValues={{firstName, lastName, email, password, bYear, bMonth, bDay, gender}}
                         validationSchema={signupValidation} onSubmit={handleSubmit}>
-                    {(formik) => (
+                    {() => (
                         <Form className="signup_form">
                             <div className="signup_line">
                                 <SignupInput type={'text'} name={'firstName'} placeholder={'First Name'}
@@ -104,10 +115,12 @@ const SignupForm = () => {
                                 any time
                             </div>
                             <div className="signup_btn_wrapper">
-                                <button className="blue_btn open_signup" type={'submit'}>
+                                <button className="blue_btn open_signup" type="submit" disabled={status !== 'idle'}>
                                     Sign Up
                                 </button>
                             </div>
+                            <DotLoader color={'#1876f2'} loading={status !== 'idle'} size={30}/>
+                            {message?.includes('success') && <div className="success_text">{message}</div>}
                         </Form>
                     )}
                 </Formik>

@@ -262,7 +262,12 @@
     top: 14px!important;
 }
 /*---------DoB and Gender------------*/
-
+/*-------Success Message---------*/
+.success_text{
+    color: var(--green-color);
+    text-align: center;
+}
+/*-------Success Message---------*/
 /*---------Media Queries--------*/
 @media (min-width: 539px) {
     .signin_footer_wrap {
