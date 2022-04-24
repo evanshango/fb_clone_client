@@ -6,14 +6,15 @@ import Home from "./pages/home"
 import {ToastContainer} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 import {useAppDispatch} from "./store/store"
-import cookies from 'js-cookie'
 import {setUser, STORAGE_KEY} from "./pages/account/accountSlice"
 
 const App = () => {
     const dispatch = useAppDispatch()
 
     useEffect(() => {
-        if (cookies.get(STORAGE_KEY)) dispatch(setUser(JSON.parse(cookies.get(STORAGE_KEY))))
+        const value = localStorage.getItem(STORAGE_KEY)
+        const user = value && value !== 'undefined' ? value : null
+        dispatch(setUser(user))
     }, [dispatch])
 
     return (

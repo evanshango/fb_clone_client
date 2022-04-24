@@ -58,7 +58,7 @@ a {
     background: var(--blue-color);
 }
 
-.blue_btn:disabled{
+.blue_btn:disabled {
     cursor: not-allowed;
     background: var(--bg-third);
 }
@@ -75,6 +75,27 @@ a {
     overflow-y: scroll;
 }
 
+/*-----------Hovers------------*/
+.hover1:hover {
+    background: var(--bg-secondary);
+}
+
+.hover2:hover {
+    background: var(--bg-third);
+}
+.hover3:hover {
+    background: #d4d6da3a;
+}
+
+/*-----------Hovers------------*/
+
+.card {
+    height: 500px;
+    width: 500px;
+    /*background: red;*/
+}
+
+/*--------------Scrollbar-------------*/
 ::-webkit-scrollbar {
     width: 7px;
     height: 3px;
@@ -84,3 +105,26 @@ a {
     background: #1876f2;
     border-radius: 8px;
 }
+.scrollbar::-webkit-scrollbar{
+    width: 7px;
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    background: #aeaeafa1;
+    border-radius: 5px;
+}
+/*--------------Scrollbar-------------*/
+
+/*--------------Circles---------------*/
+.small_circle{
+    position: relative;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+    background: var(--bg-third);
+    cursor: pointer;
+}
+/*--------------Circles---------------*/

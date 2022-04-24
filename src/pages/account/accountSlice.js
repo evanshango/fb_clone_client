@@ -1,6 +1,5 @@
 import {createAsyncThunk, createSlice, isAnyOf} from "@reduxjs/toolkit"
 import agent from "../../api/agent"
-import cookies from 'js-cookie'
 import {history} from "../../index"
 
 export const STORAGE_KEY = "fb_clone_user"
@@ -44,10 +43,12 @@ export const accountSlice = createSlice({
     initialState,
     reducers: {
         setUser: (state, action) => {
-            cookies.set(STORAGE_KEY, JSON.stringify(action.payload.user))
-            state.user = {...state.user, ...action.payload.user}
-            state.status = 'idle'
-            setTimeout(() => history.push('/'), action.payload.timeout)
+            if (action.payload) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(action.payload.user))
+                state.user = {...state.user, ...action.payload.user}
+                state.status = 'idle'
+                setTimeout(() => history.push('/'), action.payload.timeout)
+            }
         },
         resetState: (state) => {
             state.message = ''
