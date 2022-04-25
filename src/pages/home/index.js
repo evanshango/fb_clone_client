@@ -1,19 +1,22 @@
 import Header from "../../components/header"
-import {useRef, useState} from "react"
-import {useClickOutside} from "../../helpers/clickOutside"
+import LeftHome from "../../components/home/left"
+import {useAppSelector} from "../../store/store"
+import RightHome from "../../components/home/right"
+import Stories from "../../components/home/stories"
+import './styles.css'
+import CreatePost from "../../components/home/createPost"
 
 const Home = () => {
-    const [visible, setVisible] = useState(true)
-    const el = useRef(null)
-    useClickOutside(el, () => setVisible(false))
+    const {user} = useAppSelector(state => state.account)
     return (
-        <div>
-            <Header/>
-            {visible && (
-                <div className="card" ref={el}>
-
-                </div>
-            )}
+        <div className='home'>
+            <Header user={user}/>
+            <LeftHome user={user}/>
+            <div className="home_middle">
+                <Stories/>
+                <CreatePost user={user}/>
+            </div>
+            <RightHome user={user}/>
         </div>
     )
 }

@@ -14,15 +14,13 @@ import {
     Search,
     Watch
 } from "../../svg"
-import {useAppSelector} from "../../store/store"
 import SearchMenu from "./SearchMenu"
 import AllMenu from "./AllMenu"
 import {useClickOutside} from "../../helpers/clickOutside"
 import UserMenu from "./userMenu"
 
-const Header = () => {
+const Header = ({user}) => {
     const color = '#65676b'
-    const {user} = useAppSelector(state => state.account)
 
     const [showSearchMenu, setShowSearchMenu] = useState(false)
     const [showAllMenu, setShowAllMenu] = useState(false)
@@ -75,7 +73,11 @@ const Header = () => {
                     </Link>
                 )}
                 <div className={`circle_icon hover1 ${showAllMenu && 'active_header'}`} ref={allMenu}>
-                    <div onClick={() => setShowAllMenu(!showAllMenu)}><Menu/></div>
+                    <div onClick={() => setShowAllMenu(!showAllMenu)}>
+                        <div style={{transform: 'translateY(2px)'}}>
+                            <Menu/>
+                        </div>
+                    </div>
                     {showAllMenu && <AllMenu/>}
                 </div>
                 <div className="circle_icon hover1">
@@ -87,7 +89,11 @@ const Header = () => {
                 </div>
                 {user && (
                     <div className={`circle_icon hover1 ${showUserMenu && 'active_header'}`} ref={userMenu}>
-                        <div onClick={() => setShowUserMenu(!showUserMenu)}><ArrowDown/></div>
+                        <div onClick={() => setShowUserMenu(!showUserMenu)}>
+                            <div style={{transform: 'translateY(2px)'}}>
+                                <ArrowDown/>
+                            </div>
+                        </div>
                         {showUserMenu && <UserMenu user={user}/>}
                     </div>
                 )}

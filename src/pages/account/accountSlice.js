@@ -38,6 +38,17 @@ export const signupUser = createAsyncThunk(
     }
 )
 
+export const fetchUser = createAsyncThunk(
+    'account/currentUser',
+    async (_, thunkApi) => {
+        thunkApi.dispatch(setUser({user: JSON.parse(localStorage.getItem(STORAGE_KEY)), timeout: 0}))
+    }, {
+        condition: () => {
+            if (!localStorage.getItem(STORAGE_KEY)) return false
+        }
+    }
+)
+
 export const accountSlice = createSlice({
     name: 'account',
     initialState,
