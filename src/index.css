@@ -41,7 +41,8 @@ a {
 }
 
 /***Buttons***/
-.blue_btn {
+.blue_btn,
+.gray_btn {
     border: none;
     outline: none;
     padding: 9px 12px;
@@ -55,10 +56,19 @@ a {
     justify-content: center;
     gap: 6px;
     cursor: pointer;
+}
+
+.blue_btn {
     background: var(--blue-color);
 }
 
-.blue_btn:disabled {
+.gray_btn{
+    background: var(--bg-secondary);
+    color: #111;
+}
+
+.blue_btn:disabled,
+.gray_btn:disabled {
     cursor: not-allowed;
     background: var(--bg-third);
 }
@@ -83,6 +93,7 @@ a {
 .hover2:hover {
     background: var(--bg-third);
 }
+
 .hover3:hover {
     background: #d4d6da3a;
 }
@@ -105,17 +116,20 @@ a {
     background: #1876f2;
     border-radius: 8px;
 }
-.scrollbar::-webkit-scrollbar{
+
+.scrollbar::-webkit-scrollbar {
     width: 7px;
 }
-.scrollbar::-webkit-scrollbar-thumb{
+
+.scrollbar::-webkit-scrollbar-thumb {
     background: #aeaeafa1;
     border-radius: 5px;
 }
+
 /*--------------Scrollbar-------------*/
 
 /*--------------Circles---------------*/
-.small_circle{
+.small_circle {
     position: relative;
     height: 36px;
     width: 36px;
@@ -127,4 +141,5 @@ a {
     background: var(--bg-third);
     cursor: pointer;
 }
+
 /*--------------Circles---------------*/

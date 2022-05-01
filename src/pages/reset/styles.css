@@ -1,0 +1,324 @@
+.reset {
+    background: var(--bg-secondary);
+    height: 100vh;
+    color: var(--color-primary);
+}
+
+.reset_header {
+    background: var(--bg-primary);
+    box-shadow: 1px 8px 15px -7px var(--shadow-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 50px;
+    height: 58px;
+}
+
+.reset_header img {
+    width: 160px;
+}
+
+.right_reset {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right_reset img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reset_wrap {
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset_form {
+    position: relative;
+    background: var(--bg-primary);
+    box-shadow: 0 1px 2px var(--shadow-1);
+    border-radius: 10px;
+    height: 280px;
+}
+
+.reset_form_header {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 1px solid var(--bg-third);
+}
+
+.reset_form_text {
+    padding: 15px;
+    font-size: 17px;
+}
+
+.reset_form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center!important;
+    border-bottom: 1px solid var(--bg-third);
+}
+
+.reset_form form .input_wrap{
+    width: 90% !important;
+}
+
+.reset_form_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: .5rem;
+    gap: 10px;
+}
+
+.reset_form_buttons a,
+.reset_form_buttons button {
+    width: 90px;
+}
+
+.reset_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    color: var(--color-secondary);
+}
+
+.reset_left {
+    padding: 15px;
+}
+
+.reset_grid label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.reset_left input{
+    width: 20px;
+    height: 20px;
+}
+
+.label_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.reset_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset_right img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dynamic_height{
+    height: 400px!important;
+}
+
+@media (max-width: 650px) {
+    .reset_header img {
+        width: 80px;
+    }
+    .reset_wrap{
+        padding: 0 1rem;
+    }
+
+    .reset_form_header{
+        font-size: 15px;
+    }
+
+    .reset_form_text{
+        font-size: 13px;
+    }
+
+    .reset_form form input{
+        font-size: 14px;
+    }
+
+    .reset_form_buttons a,
+    .reset_form_buttons button {
+        width: 90px;
+    }
+
+    .right_reset img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .right_reset button{
+        font-size: 12px;
+        padding: .3rem;
+    }
+    .reset_form{
+        height: 300px;
+    }
+}
+
+@media (max-width: 507px) {
+    .reset_form{
+        height: 310px;
+    }
+}
+
+@media (max-width: 302px) {
+    .reset_form{
+        height: 330px;
+    }
+}
+
+@media (max-width: 270px){
+    .reset_right{
+        font-size: 13px;
+    }
+
+    .reset_right img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .reset_form_buttons{
+        transform: scale(.9);
+        right: -10px!important;
+    }
+
+    .reset_form_buttons a,
+    .reset_form_buttons button {
+        width: 70px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 230px){
+    .reset_form{
+        width: 98%;
+    }
+
+    .reset_form_text{
+        padding: 5px;
+        width: 90%;
+    }
+
+    .reset_left label input{
+        width: 10px;
+        height: 10px;
+    }
+
+    .label_col span{
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 194px) {
+    .reset_form{
+        height: 350px!important;
+    }
+}
+
+@media (max-width: 190px){
+    .logo{
+        display: none;
+    }
+
+    .right_reset{
+        margin-left: auto;
+    }
+
+    .reset_form{
+        height: 300px;
+    }
+
+    .reset_form_buttons{
+        justify-content: space-between;
+    }
+
+    .reset_form_text{
+        font-size: 10px;
+    }
+
+    .reset_form form input{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 650px){
+    .reset_form{
+        width: 570px;
+        height: 310px!important;
+    }
+    .reset_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dynamic_height{
+        height: 320px!important;
+    }
+}
+
+@media (min-width: 651px){
+    .reset_form{
+        height: 330px!important;
+    }
+}
+
+@media (max-width: 849px){
+    .change_pass{
+        height: 440px!important;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1170px){
+    .reset_form .input_error{
+        left: 0;
+        width: 100%;
+        top: 60px;
+    }
+
+    .reset_form .error_arrow_right{
+        border-bottom: 10px solid #b94a48;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+        top: -20px;
+        left: 5px;
+        width: 10px;
+    }
+
+    .change_pass{
+        height: 350px!important;
+    }
+}
+
+@media (min-width: 1171px){
+    .reset_form{
+        height: 280px!important;
+    }
+
+    .send_email_form{
+        height: 330px!important;
+    }
+
+    .change_pass{
+        height: 320px!important;
+    }
+}

@@ -4,9 +4,7 @@ import {useMediaQuery} from "react-responsive"
 
 const SigninInput = ({placeholder, bottom, ...props}) => {
     const [field, meta] = useField(props)
-    const desktopView = useMediaQuery({
-        query: '(min-width: 850px)',
-    })
+    const desktopView = useMediaQuery({query: '(min-width: 850px)'})
     return (
         <div className="input_wrap">
             {meta.touched && meta.error && !bottom && (

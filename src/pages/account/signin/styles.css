@@ -252,21 +252,29 @@
 
 /*---------Footer---------*/
 /*---------DoB and Gender------------*/
-.signup_grid .input_error{
+.signup_grid .input_error {
     width: 300px;
     position: absolute;
     top: 70px;
 }
-.input_error_select{
+
+.input_error_select {
     left: -97%;
-    top: 14px!important;
+    top: 14px !important;
 }
+
 /*---------DoB and Gender------------*/
 /*-------Success Message---------*/
-.success_text{
+.success_text {
     color: var(--green-color);
     text-align: center;
 }
+
+.error_text {
+    color: #b94a48;
+    text-align: center;
+}
+
 /*-------Success Message---------*/
 /*---------Media Queries--------*/
 @media (min-width: 539px) {
@@ -285,7 +293,8 @@
     .signup_grid select, .signup_grid label {
         width: 126px;
     }
-    .signup_grid .input_error{
+
+    .signup_grid .input_error {
         width: 400px
     }
 }

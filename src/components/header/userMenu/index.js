@@ -3,8 +3,11 @@ import {Link} from "react-router-dom"
 import SettingsPrivacy from "./SettingsPrivacy"
 import HelpSupport from "./HelpSupport"
 import DisplayAccessibility from "./DisplayAccessibility"
+import {useAppDispatch} from "../../../store/store"
+import {signout} from "../../../pages/account/accountSlice"
 
 const UserMenu = ({user}) => {
+    const dispatch = useAppDispatch()
     const [visible, setVisible] = useState(0)
     return (
         <div className="menu">
@@ -42,7 +45,7 @@ const UserMenu = ({user}) => {
                         <span>Display & Accessibility</span>
                         <div className="right_arrow"><i className="right_icon"/></div>
                     </div>
-                    <div className="menu_item hover3">
+                    <div className="menu_item hover3" onClick={() => dispatch(signout())}>
                         <div className="small_circle"><i className="logout_filled_icon"/></div>
                         <span>Sign Out</span>
                     </div>

@@ -5,10 +5,12 @@ import * as Yup from "yup"
 import DobSelect from "./DobSelect"
 import GenderSelect from "./GenderSelect"
 import {useAppDispatch, useAppSelector} from "../../../store/store"
-import {resetState, signupUser} from "../../../pages/account/accountSlice"
+import {fetchUser, resetState, signupUser} from "../../../pages/account/accountSlice"
 import {DotLoader} from "react-spinners"
+import {useNavigate} from "react-router-dom"
 
 const SignupForm = ({setVisible}) => {
+    const navigate = useNavigate()
     const dispatch = useAppDispatch()
     const {message, status} = useAppSelector(state => state.account)
     const signupInfo = {
@@ -64,11 +66,10 @@ const SignupForm = ({setVisible}) => {
         } else {
             setGenderError('')
             setDateError('')
-            try {
-                await dispatch(signupUser(signup))
-            } catch (e) {
-                console.log("ERROR")
-            }
+            dispatch(signupUser(signup)).then(async () => {
+                await dispatch(fetchUser())
+                setTimeout(() => navigate('/'), 2000)
+            }).catch(() => console.log('error'))
         }
     }
 

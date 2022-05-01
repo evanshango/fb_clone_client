@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Form, Formik} from "formik"
 import SigninInput from "../inputs/signin"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import * as Yup from "yup"
 import {useAppDispatch, useAppSelector} from "../../../store/store"
-import {signinUser} from "../../../pages/account/accountSlice"
+import {fetchUser, signinUser} from "../../../pages/account/accountSlice"
 import {DotLoader} from "react-spinners"
 
 const SigninForm = ({setVisible}) => {
@@ -14,8 +14,9 @@ const SigninForm = ({setVisible}) => {
     }
     const [signin, setSignin] = useState(signinInfo)
     const {email, password} = signin
+    const navigate = useNavigate()
     const dispatch = useAppDispatch()
-    const {status} = useAppSelector(state => state.account)
+    const {status, user} = useAppSelector(state => state.account)
 
     const handleInputChange = (e) => {
         const {name, value} = e.target
@@ -30,12 +31,13 @@ const SigninForm = ({setVisible}) => {
     })
 
     const handleSignin = async () => {
-        try {
-            await dispatch(signinUser(signin))
-        } catch (e) {
-            console.log("ERROR")
-        }
+        dispatch(signinUser(signin)).then(async () => await dispatch(fetchUser()))
+            .catch(() => console.log('error'))
     }
+
+    useEffect(() => {
+        user && navigate('/')
+    }, [user, navigate])
 
     return (
         <div className="signin_wrap">
@@ -66,9 +68,10 @@ const SigninForm = ({setVisible}) => {
                             </Form>
                         )}
                     </Formik>
-                    <Link to={'/forgot'} className="forgot_password">Forgotten Password?</Link>
+                    <Link to={'/forgot/password'} className="forgot_password">Forgotten Password?</Link>
                     <div className="sign_splitter"/>
-                    <button className="blue_btn open_signup" type="button" onClick={() => setVisible(true)}>
+                    <button className="blue_btn open_signup" type="button" onClick={() => setVisible(true)}
+                            disabled={status !== 'idle'}>
                         Create Account
                     </button>
                 </div>
