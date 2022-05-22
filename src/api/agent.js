@@ -2,7 +2,7 @@ import axios from 'axios'
 import {toast} from "react-toastify"
 import {STORAGE_KEY} from "../pages/account/accountSlice"
 
-const sleep = () => new Promise(resolve => setTimeout(resolve, 2000))
+const sleep = () => new Promise(resolve => setTimeout(resolve, 1000))
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
 
 const responseBody = (response) => response.data

@@ -1,6 +1,6 @@
 .friends_requests_icon {
     background-image: url(../../../public/icons/icons11.png);
-    background-position: 0px -117px;
+    background-position: 0 -117px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -11,7 +11,7 @@
 
 .friends_suggestions_icon {
     background-image: url(../../../public/icons/icons11.png);
-    background-position: 0px -75px;
+    background-position: 0 -75px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -22,7 +22,7 @@
 
 .all_friends_icon {
     background-image: url(../../../public/icons/icons11.png);
-    background-position: 0px -96px;
+    background-position: 0 -96px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -33,7 +33,7 @@
 
 .birthdays_icon {
     background-image: url(../../../public/icons/icons11.png);
-    background-position: 0px -138px;
+    background-position: 0 -138px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -44,7 +44,7 @@
 
 .m_post_icon {
     background-image: url(../../../public/icons/icons12.png);
-    background-position: 0px -132px;
+    background-position: 0 -132px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -54,7 +54,7 @@
 
 .m_story_icon {
     background-image: url(../../../public/icons/icons13.png);
-    background-position: 0px -387px;
+    background-position: 0 -387px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -64,7 +64,7 @@
 
 .m_room_icon {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -542px;
+    background-position: 0 -542px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -74,7 +74,7 @@
 
 .m_page_icon {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -521px;
+    background-position: 0 -521px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -84,7 +84,7 @@
 
 .m_ad_icon {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -1004px;
+    background-position: 0 -1004px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -94,7 +94,7 @@
 
 .m_group_icon {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -479px;
+    background-position: 0 -479px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -104,7 +104,7 @@
 
 .m_event_icon {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -647px;
+    background-position: 0 -647px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -114,7 +114,7 @@
 
 .m_post_mar {
     background-image: url(../../../public/icons/icons13.png);
-    background-position: 0px -366px;
+    background-position: 0 -366px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -124,7 +124,7 @@
 
 .m_post_job {
     background-image: url(../../../public/icons/icons14.png);
-    background-position: 0px -626px;
+    background-position: 0 -626px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -134,7 +134,7 @@
 
 .report_filled_icon {
     background-image: url(../../../public/icons/icons15.png);
-    background-position: 0px -25px;
+    background-position: 0 -25px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -154,7 +154,7 @@
 
 .help_filled_icon {
     background-image: url(../../../public/icons/icons17.png);
-    background-position: 0px -487px;
+    background-position: 0 -487px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -164,7 +164,7 @@
 
 .dark_filled_icon {
     background-image: url(../../../public/icons/icons17.png);
-    background-position: 0px -340px;
+    background-position: 0 -340px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -174,7 +174,7 @@
 
 .logout_filled_icon {
     background-image: url(../../../public/icons/icons15.png);
-    background-position: 0px -46px;
+    background-position: 0 -46px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -195,7 +195,7 @@
 
 .privacy_checkup_icon {
     background-image: url(../../../public/icons/icons15.png);
-    background-position: 0px -67px;
+    background-position: 0 -67px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -205,7 +205,7 @@
 
 .privacy_shortcuts_icon {
     background-image: url(../../../public/icons/icons19.png);
-    background-position: 0px -495px;
+    background-position: 0 -495px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -225,7 +225,7 @@
 
 .news_icon {
     background-image: url(../../../public/icons/icons21.png);
-    background-position: 0px -239px;
+    background-position: 0 -239px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -235,7 +235,7 @@
 
 .language_icon {
     background-image: url(../../../public/icons/icons22.png);
-    background-position: 0px -658px;
+    background-position: 0 -658px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -245,7 +245,7 @@
 
 .arrow_back_icon {
     background-image: url(../../../public/icons/icons18.png);
-    background-position: 0px -46px;
+    background-position: 0 -46px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -255,7 +255,7 @@
 
 .help_center_icon {
     background-image: url(../../../public/icons/icons17.png);
-    background-position: 0px -487px;
+    background-position: 0 -487px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -265,7 +265,7 @@
 
 .email_icon {
     background-image: url(../../../public/icons/icons22.png);
-    background-position: 0px -532px;
+    background-position: 0 -532px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -275,7 +275,7 @@
 
 .info_filled_icon {
     background-image: url(../../../public/icons/icons23.png);
-    background-position: 0px -355px;
+    background-position: 0 -355px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -285,7 +285,7 @@
 
 .keyboard_icon {
     background-image: url(../../../public/icons/icons24.png);
-    background-position: 0px -242px;
+    background-position: 0 -242px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -318,7 +318,7 @@
 
 .pin_icon {
     background-image: url("../../../public/icons/icons1.png");
-    background-position: 0px -378px;
+    background-position: 0 -378px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -328,7 +328,7 @@
 
 .save_icon {
     background-image: url("../../../public/icons/icons1.png");
-    background-position: 0px -63px;
+    background-position: 0 -63px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -338,7 +338,7 @@
 
 .embed_icon {
     background-image: url("../../../public/icons/icons1.png");
-    background-position: 0px -126px;
+    background-position: 0 -126px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -348,7 +348,7 @@
 
 .copy_icon {
     background-image: url("../../../public/icons/icons2.png");
-    background-position: 0px -568px;
+    background-position: 0 -568px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -358,7 +358,7 @@
 
 .edit_icon {
     background-image: url("../../../public/icons/icons2.png");
-    background-position: 0px -610px;
+    background-position: 0 -610px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -369,7 +369,7 @@
 
 .turnOffNotifications_icon {
     background-image: url("../../../public/icons/icons3.png");
-    background-position: 0px -138px;
+    background-position: 0 -138px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -379,7 +379,7 @@
 
 .delete_icon {
     background-image: url("../../../public/icons/icons1.png");
-    background-position: 0px -399px;
+    background-position: 0 -399px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -389,7 +389,7 @@
 
 .date_icon {
     background-image: url("../../../public/icons/icons4.png");
-    background-position: 0px -67px;
+    background-position: 0 -67px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -399,7 +399,7 @@
 
 .refresh_icon {
     background-image: url("../../../public/icons/refresh.png");
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -409,7 +409,7 @@
 
 .archive_icon {
     background-image: url("../../../public/icons/icons1.png");
-    background-position: 0px -84px;
+    background-position: 0 -84px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -419,7 +419,7 @@
 
 .trash_icon {
     background-image: url("../../../public/icons/icons2.png");
-    background-position: 0px -799px;
+    background-position: 0 -799px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -462,7 +462,7 @@
 
 .emoji_icon {
     background-image: url("../../../public/icons/icons5.png");
-    background-position: 0px -434px;
+    background-position: 0 -434px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -473,7 +473,7 @@
 
 .camera_icon {
     background-image: url("../../../public/icons/icons5.png");
-    background-position: 0px -366px;
+    background-position: 0 -366px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -484,7 +484,7 @@
 
 .gif_icon {
     background-image: url("../../../public/icons/icons5.png");
-    background-position: 0px -451px;
+    background-position: 0 -451px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -495,7 +495,7 @@
 
 .sticker_icon {
     background-image: url("../../../public/icons/icons5.png");
-    background-position: 0px -468px;
+    background-position: 0 -468px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -539,7 +539,7 @@
     height: 24px;
     width: 24px;
     background-image: url("../../../public/icons/icons7.png");
-    background-position: 0px -207px;
+    background-position: 0 -207px;
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
@@ -551,7 +551,7 @@
     height: 24px;
     width: 24px;
     background-image: url("../../../public/icons/icons7.png");
-    background-position: 0px -257px;
+    background-position: 0 -257px;
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
@@ -561,7 +561,7 @@
     height: 24px;
     width: 24px;
     background-image: url("../../../public/icons/icons8.png");
-    background-position: 0px -225px;
+    background-position: 0 -225px;
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
@@ -571,7 +571,7 @@
     height: 24px;
     width: 24px;
     background-image: url("../../../public/icons/icons9.png");
-    background-position: 0px -100px;
+    background-position: 0 -100px;
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
@@ -600,7 +600,7 @@
 
 .camera_filled_icon {
     background-image: url("../../../public/icons/icons25.png");
-    background-position: 0px -444px;
+    background-position: 0 -444px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -610,7 +610,7 @@
 
 .photo_icon {
     background-image: url(../../../public/icons/icons35.png);
-    background-position: 0px -63px;
+    background-position: 0 -63px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -621,7 +621,7 @@
 
 .upload_icon {
     background-image: url(../../../public/icons/icons35.png);
-    background-position: 0px -126px;
+    background-position: 0 -126px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -642,7 +642,7 @@
 
 .plus_icon {
     background-image: url(../../../public/icons/icons22.png);
-    background-position: 0px -1341px;
+    background-position: 0 -1341px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -652,7 +652,7 @@
 
 .frame_icon {
     background-image: url(../../../public/icons/icons31.png);
-    background-position: 0px -130px;
+    background-position: 0 -130px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -662,7 +662,7 @@
 
 .minus_icon {
     background-image: url(../../../public/icons/icons33.png);
-    background-position: 0px -50px;
+    background-position: 0 -50px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -672,7 +672,7 @@
 
 .plus_icon {
     background-image: url(../../../public/icons/icons32.png);
-    background-position: 0px -25px;
+    background-position: 0 -25px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -682,7 +682,7 @@
 
 .crop_icon {
     background-image: url(../../../public/icons/icons31.png);
-    background-position: 0px -113px;
+    background-position: 0 -113px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -692,7 +692,7 @@
 
 .temp_icon {
     background-image: url(../../../public/icons/icons31.png);
-    background-position: 0px -96px;
+    background-position: 0 -96px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -702,7 +702,7 @@
 
 .unfriend_outlined_icon {
     background-image: url(../../../public/icons/icons30.png);
-    background-position: 0px -105px;
+    background-position: 0 -105px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -712,7 +712,7 @@
 
 .turnOnNotification_icon {
     background-image: url(../../../public/icons/icons29.png);
-    background-position: 0px -324px;
+    background-position: 0 -324px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -722,7 +722,7 @@
 
 .download_icon {
     background-image: url(../../../public/icons/icons28.png);
-    background-position: 0px -42px;
+    background-position: 0 -42px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -732,7 +732,7 @@
 
 .fullscreen_icon {
     background-image: url(../../../public/icons/icons28.png);
-    background-position: 0px -210px;
+    background-position: 0 -210px;
     background-size: auto;
     width: 20px;
     height: 20px;
@@ -742,7 +742,7 @@
 
 .rounded_plus_icon {
     background-image: url(../../../public/icons/icons27.png);
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: auto;
     width: 32px;
     height: 32px;
@@ -753,7 +753,7 @@
 
 .equalize_icon {
     background-image: url(../../../public/icons/icons26.png);
-    background-position: 0px -63px;
+    background-position: 0 -63px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -763,7 +763,7 @@
 
 .manage_icon {
     background-image: url(../../../public/icons/icons26.png);
-    background-position: 0px -165px;
+    background-position: 0 -165px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -773,7 +773,7 @@
 
 .list_icon {
     background-image: url(../../../public/icons/icons26.png);
-    background-position: 0px -131px;
+    background-position: 0 -131px;
     background-size: auto;
     width: 16px;
     height: 16px;
@@ -783,7 +783,7 @@
 
 .grid_icon {
     background-image: url(../../../public/icons/icons26.png);
-    background-position: 0px -80px;
+    background-position: 0 -80px;
     background-size: auto;
     width: 16px;
     height: 16px;

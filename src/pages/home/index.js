@@ -7,34 +7,35 @@ import './styles.css'
 import CreatePost from "../../components/home/createPost"
 import {useParams} from "react-router-dom"
 import ActivateForm from "./ActivateForm"
-import {useEffect} from "react"
+import {useEffect, useState} from "react"
 import {activateAccount} from "../account/accountSlice"
 import Verification from "../../components/home/verification"
+import PostPopup from "../../components/post"
 
 const Home = () => {
     const {token} = useParams()
     const dispatch = useAppDispatch()
     const {user, status, message} = useAppSelector(state => state.account)
+    const [createPostVisible, setCreatePostVisible] = useState(false)
 
     useEffect(() => {
         token && token !== '' && dispatch(activateAccount({token}))
     }, [dispatch, token])
 
     return (
-        <div className='home'>
+        <div className="home">
+            {createPostVisible && <PostPopup user={user} setCreatePostVisible={setCreatePostVisible}/>}
             {token && token !== '' && (
-                <ActivateForm
-                    type={message?.includes('successfully') ? 'success' : 'failed'}
+                <ActivateForm type={message?.includes('successfully') ? 'success' : 'failed'}
                     header={`Account Verification ${message?.includes('successfully') ? 'Succeeded' : 'Failed'}`}
-                    text={message} status={status}
-                />
+                    text={message} status={status}/>
             )}
             <Header user={user}/>
             <LeftHome user={user}/>
             <div className="home_middle">
                 <Stories/>
                 {!user?.verified && <Verification/>}
-                <CreatePost user={user}/>
+                <CreatePost user={user} setCreatePostVisible={setCreatePostVisible}/>
             </div>
             <RightHome user={user}/>
         </div>

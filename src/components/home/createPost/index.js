@@ -1,10 +1,10 @@
 import './styles.css'
 import {Feeling, LiveVideo, Photo} from "../../../svg"
 
-const CreatePost = ({user}) => {
+const CreatePost = ({user, setCreatePostVisible}) => {
     return (
         <div className="create_post">
-            <div className="create_post_header">
+            <div className="create_post_header" onClick={() => setCreatePostVisible(true)}>
                 <img src={user?.picture} alt={user?.firstName}/>
                 <div className="open_post hover2">What's on your mind, {user?.firstName}</div>
             </div>
